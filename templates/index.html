@@ -1,0 +1,166 @@
+# NovaHire - `index.html`
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NovaHire</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    body {
+      background: linear-gradient(to right, #0f172a, #111827, #1e293b);
+      font-family: Arial, sans-serif;
+      overflow-x: hidden;
+    }
+
+    .glass {
+      background: rgba(255, 255, 255, 0.08);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .glow {
+      box-shadow: 0 0 20px rgba(59, 130, 246, 0.5);
+    }
+  </style>
+</head>
+<body class="text-white min-h-screen flex items-center justify-center p-6">
+
+  <div class="w-full max-w-6xl grid md:grid-cols-2 gap-10 items-center">
+
+    <!-- LEFT SECTION -->
+    <div>
+      <h1 class="text-6xl font-bold mb-4 text-blue-400">
+        NovaHire
+      </h1>
+
+      <p class="text-xl text-gray-300 mb-6 leading-relaxed">
+        AI Powered Interview Platform For Students.
+        Practice interviews, get instant AI feedback,
+        improve communication and crack placements.
+      </p>
+
+      <div class="flex gap-4 flex-wrap">
+        <button class="bg-blue-500 hover:bg-blue-600 px-6 py-3 rounded-xl font-semibold transition glow">
+          Start Interview
+        </button>
+
+        <button class="border border-gray-500 hover:border-blue-400 px-6 py-3 rounded-xl font-semibold transition">
+          Learn More
+        </button>
+      </div>
+
+      <div class="grid grid-cols-3 gap-4 mt-10">
+        <div class="glass p-4 rounded-2xl text-center">
+          <h2 class="text-3xl font-bold text-blue-400">500+</h2>
+          <p class="text-gray-300 mt-2">Students</p>
+        </div>
+
+        <div class="glass p-4 rounded-2xl text-center">
+          <h2 class="text-3xl font-bold text-blue-400">1000+</h2>
+          <p class="text-gray-300 mt-2">Interviews</p>
+        </div>
+
+        <div class="glass p-4 rounded-2xl text-center">
+          <h2 class="text-3xl font-bold text-blue-400">95%</h2>
+          <p class="text-gray-300 mt-2">Success Rate</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- RIGHT SECTION -->
+    <div class="glass p-8 rounded-3xl shadow-2xl">
+
+      <div class="flex items-center justify-between mb-6">
+        <h2 class="text-3xl font-bold">Login</h2>
+        <div class="w-4 h-4 bg-green-400 rounded-full animate-pulse"></div>
+      </div>
+
+      <form>
+
+        <div class="mb-5">
+          <label class="block mb-2 text-gray-300">College Email</label>
+          <input
+            type="email"
+            placeholder="student@kkwagh.edu"
+            class="w-full p-4 rounded-xl bg-gray-900 border border-gray-700 focus:border-blue-400 outline-none"
+          />
+        </div>
+
+        <div class="mb-5">
+          <label class="block mb-2 text-gray-300">Password</label>
+          <input
+            type="password"
+            placeholder="••••••••"
+            class="w-full p-4 rounded-xl bg-gray-900 border border-gray-700 focus:border-blue-400 outline-none"
+          />
+        </div>
+
+        <button
+          type="submit"
+          class="w-full bg-blue-500 hover:bg-blue-600 transition p-4 rounded-xl font-bold text-lg glow"
+        >
+          Login To NovaHire
+        </button>
+
+      </form>
+
+      <div class="mt-8 border-t border-gray-700 pt-6">
+
+        <h3 class="text-xl font-semibold mb-4">Features</h3>
+
+        <div class="space-y-4">
+
+          <div class="glass p-4 rounded-xl flex justify-between items-center">
+            <span>AI Mock Interview</span>
+            <span class="text-green-400">Active</span>
+          </div>
+
+          <div class="glass p-4 rounded-xl flex justify-between items-center">
+            <span>Resume Analysis</span>
+            <span class="text-green-400">Active</span>
+          </div>
+
+          <div class="glass p-4 rounded-xl flex justify-between items-center">
+            <span>Voice Based Interview</span>
+            <span class="text-yellow-400">Beta</span>
+          </div>
+
+          <div class="glass p-4 rounded-xl flex justify-between items-center">
+            <span>Performance Dashboard</span>
+            <span class="text-green-400">Active</span>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
+```
+
+# PyCharm Me Kaise Use Kare
+
+1. PyCharm open karo
+2. New Project banao
+3. Ek file banao:
+
+```bash
+index.html
+```
+
+4. Upar wala pura code paste karo
+5. File save karo
+6. Browser me open karo
+
+Agar live preview chahiye:
+
+* VS Code Live Server
+* ya PyCharm ka browser preview use karo.
+
+Ye tumhe futuristic NovaHire UI dega jo backend ke sath later connect ho sakta hai.

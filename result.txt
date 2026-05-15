@@ -1,0 +1,64 @@
+AI INTERVIEW REPORT
+============================================================
+Candidate Name: yash
+Interview Type: HR
+Final Score: 16.67%
+Average Confidence Rating: 45.00/100
+Overall Emotion Detection: Confident
+Final Feedback: Needs significant improvement in both communication and subject knowledge.
+============================================================
+
+Question 1: Why do you want to join our company
+Answer: because i have to gain experience
+Marks: 0/2
+Confidence Score: 45/100
+Confidence Level: Low
+Emotion: Confident
+Feedback: Answer needs improvement.
+Input Mode: voice
+------------------------------------------------------------
+Question 2: Where do you see yourself in five years
+Answer: i see myself in the manager post
+Marks: 0/2
+Confidence Score: 45/100
+Confidence Level: Low
+Emotion: Confident
+Feedback: Answer needs improvement.
+Input Mode: voice
+------------------------------------------------------------
+Question 3: What are your weaknesses
+Answer: i am very old
+Marks: 0/2
+Confidence Score: 35/100
+Confidence Level: Low
+Emotion: Confident
+Feedback: Answer needs improvement.
+Input Mode: voice
+------------------------------------------------------------
+Question 4: What are your strengths
+Answer: i have good practical knowledge
+Marks: 0/2
+Confidence Score: 45/100
+Confidence Level: Low
+Emotion: Confident
+Feedback: Answer needs improvement.
+Input Mode: voice
+------------------------------------------------------------
+Question 5: Why should we hire you
+Answer: because i have a skills
+Marks: 1/2
+Confidence Score: 55/100
+Confidence Level: Medium
+Emotion: Confident
+Feedback: Partially correct answer.
+Input Mode: voice
+------------------------------------------------------------
+Question 6: Tell me about yourself
+Answer: myself saro
+Marks: 1/2
+Confidence Score: 45/100
+Confidence Level: Low
+Emotion: Confident
+Feedback: Partially correct answer.
+Input Mode: voice
+------------------------------------------------------------
