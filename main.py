@@ -1,7 +1,13 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
+from ai_engine import AIEngine
+
 app = FastAPI()
+
+# AI ENGINE OBJECT
+
+engine = AIEngine()
 
 # CORS
 
@@ -23,21 +29,9 @@ def test():
 
 @app.post("/login")
 def login(data: dict):
+
     return {
         "message": "Login Success",
-        "user": data
-    }
-
-@app.post("/register")
-def login(data: dict):
-    return {
-        "message": "Register Success",
-        "user": data
-    }
-@app.post("/signup")
-def signup(data: dict):
-    return {
-        "message": "Signup Success",
         "user": data
     }
 
@@ -45,7 +39,34 @@ def signup(data: dict):
 
 @app.post("/register")
 def register(data: dict):
+
     return {
         "message": "Register Success",
         "user": data
     }
+
+# SIGNUP ROUTE
+
+@app.post("/signup")
+def signup(data: dict):
+
+    return {
+        "message": "Signup Success",
+        "user": data
+    }
+
+# AI EVALUATION ROUTE
+
+@app.post("/evaluate")
+def evaluate(data: dict):
+
+    result = engine.evaluate_answer(
+
+        data["answer"],
+
+        data["keywords"],
+
+        data["ideal_answer"]
+    )
+
+    return result
