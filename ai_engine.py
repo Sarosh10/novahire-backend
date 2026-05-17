@@ -1,32 +1,17 @@
 from rapidfuzz import fuzz
-from sentence_transformers import SentenceTransformer
-from sklearn.metrics.pairwise import cosine_similarity
+
 
 
 class AIEngine:
 
     def __init__(self):
 
-        self.semantic_model = SentenceTransformer(
-            'all-MiniLM-L6-v2'
-        )
-
-    def semantic_similarity(
-            self,
-            answer,
-            ideal_answer
-    ):
-
-        embeddings = self.semantic_model.encode(
-            [ideal_answer, answer]
-        )
-
-        score = cosine_similarity(
-            [embeddings[0]],
-            [embeddings[1]]
-        )[0][0]
-
-        return score
+        def semantic_similarity(
+                self,
+                answer,
+                ideal_answer
+        ):
+            return 0.5
 
     def check_similarity(
             self,
