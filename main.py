@@ -4,6 +4,7 @@ from fastapi.middleware.cors import CORSMiddleware
 app = FastAPI()
 
 # CORS
+
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
@@ -12,12 +13,39 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# Home Route
-@app.get("/")
-def home():
-    return {"message": "Server Running"}
+# TEST ROUTE
 
-# Test Route
 @app.get("/test")
 def test():
-    return {"message": "Backend Connected"}
+    return {"message": "Backend Running"}
+
+# LOGIN ROUTE
+
+@app.post("/login")
+def login(data: dict):
+    return {
+        "message": "Login Success",
+        "user": data
+    }
+
+@app.post("/register")
+def login(data: dict):
+    return {
+        "message": "Register Success",
+        "user": data
+    }
+@app.post("/signup")
+def signup(data: dict):
+    return {
+        "message": "Signup Success",
+        "user": data
+    }
+
+# REGISTER ROUTE
+
+@app.post("/register")
+def register(data: dict):
+    return {
+        "message": "Register Success",
+        "user": data
+    }
